@@ -20,7 +20,7 @@
 
 
         button {
-            background-color: #0a3762;
+            background-color: #e91e63;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -32,7 +32,7 @@
         }
 
         button:hover {
-            background-color: #053058;
+            background-color: #f91663;
             transform:scale(0.9);
         }
     </style>
@@ -61,16 +61,16 @@
                     "key": "rzp_live_H70QfTYCxhAEyv", // Enter the Key ID generated from the Dashboard
                     "amount": "1000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or ₹500.
                     "currency": "INR",
-                    "name": "Real Dream",
-                    "description": "Entry Fee Real Dram",
-                    "image": "https://charmingprogrammer.github.io/Real-Dream/realdreamlogo.png",
+                    "name": "Dev Contest",
+                    "description": "Entry Fee for the Dev Contest",
+                    "image": "https://charmingprogrammer.github.io/Real-Dream/devcontestlogo.png",
                     "handler": function (response) {
                         alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
                         // Redirect to a new page after successful payment
                         window.location.href = "https://forms.gle/dLcGpewyKhEsDvho9";
                     },
                     "theme": {
-                        "color": "#0a3762"
+                        "color": "#f91663"
                     }
                 };
                 var rzp1 = new Razorpay(options);
